@@ -14,30 +14,33 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">REPORTES</li>
-        <li class=""><a href="home.php"><i class="fa fa-dashboard"></i> <span>Panel de Control</span></a></li>
+        <li class=""><a href="home.php"><i class="fa fa-dashboard"></i> <span>Resumen</span></a></li>
         <li class="header">ADMINISTRACIÓN</li>
         
-        <li><a href="attendance.php"><i class="fa fa-calendar"></i> <span>Asistencia</span></a></li>
+        <li><a href="attendance.php"><i class="fa fa-calendar"></i> <span>Ocupación del tiempo</span></a></li>
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>
-            <span>Empleados</span>
+            <span>Hechos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="employee.php"><i class="fa fa-circle-o"></i> Lista de Empleados</a></li>
+            <li><a href="employee.php"><i class="fa fa-circle-o"></i> Lista</a></li>
             <li><a href="overtime.php"><i class="fa fa-circle-o"></i> Tiempo Extra</a></li>
-            <li><a href="cashadvance.php"><i class="fa fa-circle-o"></i> Adelanto en Efectivo</a></li>
+            
             <li><a href="schedule.php"><i class="fa fa-circle-o"></i> Horarios</a></li>
           </ul>
         </li>
-        <li><a href="deduction.php"><i class="fa fa-file-text"></i> Deducciones</a></li>
+       
+      
         <li><a href="position.php"><i class="fa fa-suitcase"></i> Cargos</a></li>
         <li class="header">IMPRIMIBLES</li>
-        <li><a href="payroll.php"><i class="fa fa-files-o"></i> <span>Nómina</span></a></li>
+        <li><a href="payroll.php"><i class="fa fa-files-o"></i> <span>Resumen</span></a></li>
         <li><a href="schedule_employee.php"><i class="fa fa-clock-o"></i> <span>Horarios</span></a></li>
+        
       </ul>
     </section>
     <!-- /.sidebar -->

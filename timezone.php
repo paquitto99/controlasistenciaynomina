@@ -1,4 +1,4 @@
 <?php
-	$timezone = 'America/Bogota';
-	date_default_timezone_set($timezone);
+	$timezone = 'Europe/Spain';
+	//date_default_timezone_set($timezone);
 ?>

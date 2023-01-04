@@ -70,13 +70,13 @@
     $pdf->AddPage();  
     $content = '';  
     $content .= '
-      	<h2 align="center">ConfiguroWeb</h2>
+      	<h2 align="center">Resumen</h2>
       	<h4 align="center">'.$from_title." - ".$to_title.'</h4>
       	<table border="1" cellspacing="0" cellpadding="3">  
            <tr>  
-           		<th width="40%" align="center"><b>Nombre Empleado</b></th>
-                <th width="30%" align="center"><b>ID Empleado</b></th>
-				<th width="30%" align="center"><b>Salario Neto</b></th> 
+           		<th width="40%" align="center"><b>Ocupación</b></th>
+                <th width="30%" align="center"><b>Acción</b></th>
+				<th width="30%" align="center"><b>Total de horas</b></th> 
            </tr>  
       ';  
     $content .= generateRow($from, $to, $conn, $deduction);  

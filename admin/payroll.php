@@ -16,11 +16,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Nómina
+        Resumen
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-        <li class="active">Nómina</li>
+        <li class="active">Resumen</li>
       </ol>
     </section>
     <!-- Main content -->
@@ -59,20 +59,20 @@
                     </div>
                     <input type="text" class="form-control pull-right col-sm-8" id="reservation" name="date_range" value="<?php echo (isset($_GET['range'])) ? $_GET['range'] : $range_from.' - '.$range_to; ?>">
                   </div>
-                  <button type="button" class="btn btn-success btn-sm btn-flat" id="payroll"><span class="glyphicon glyphicon-print"></span> Nómina de Sueldo</button>
-                  <button type="button" class="btn btn-primary btn-sm btn-flat" id="payslip"><span class="glyphicon glyphicon-print"></span> Recibo de Sueldo</button>
+                  <button type="button" class="btn btn-success btn-sm btn-flat" id="payroll"><span class="glyphicon glyphicon-print"></span> Resumen de Horas</button>
+                  <button type="button" class="btn btn-primary btn-sm btn-flat" id="payslip"><span class="glyphicon glyphicon-print"></span> Recibo de Horas</button>
                 </form>
               </div>
             </div>
             <div class="box-body">
               <table id="example1" class="table table-bordered">
                 <thead>
-                  <th>Nombre Empleado</th>
-                  <th>ID Empleado</th>
-                  <th>Gross</th>
-                  <th>Deducciones</th>
-                  <th>Avance de Efectivo</th>
-                  <th>Pago Neto</th>
+                  <th>Ocurrido</th>
+                  <th>Acción</th>
+                  <th>Horas acumuladas</th>
+                  <th></th>
+                  <th></th>
+                  <th>Total Horas</th>
                 </thead>
                 <tbody>
                   <?php

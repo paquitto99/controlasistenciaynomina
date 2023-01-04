@@ -48,51 +48,24 @@
   		$net = $gross - $total_deduction;
 
 		$contents .= '
-			<h2 align="center">ConfiguroWeb</h2>
+			<h2 align="center">Desglose</h2>
 			<h4 align="center">'.$from_title." - ".$to_title.'</h4>
 			<table cellspacing="0" cellpadding="3">  
     	       	<tr>  
-            		<td width="25%" align="right">Nombre Empleado: </td>
+            		<td width="25%" align="right">Ocupación del tiempo: </td>
                  	<td width="25%"><b>'.$row['firstname']." ".$row['lastname'].'</b></td>
 				 	<td width="25%" align="right">Pago por Hora: </td>
                  	<td width="25%" align="right">'.number_format($row['rate'], 2).'</td>
     	    	</tr>
     	    	<tr>
-    	    		<td width="25%" align="right">ID Empleado: </td>
+    	    		<td width="25%" align="right">ID: </td>
 				 	<td width="25%">'.$row['employee'].'</td>   
 				 	<td width="25%" align="right">Total de Horas: </td>
 				 	<td width="25%" align="right">'.number_format($row['total_hr'], 2).'</td> 
     	    	</tr>
-    	    	<tr> 
-    	    		<td></td> 
-    	    		<td></td>
-				 	<td width="25%" align="right"><b>Pago Real: </b></td>
-				 	<td width="25%" align="right"><b>'.number_format(($row['rate']*$row['total_hr']), 2).'</b></td> 
-    	    	</tr>
-    	    	<tr> 
-    	    		<td></td> 
-    	    		<td></td>
-				 	<td width="25%" align="right">Deducciones: </td>
-				 	<td width="25%" align="right">'.number_format($deduction, 2).'</td> 
-    	    	</tr>
-    	    	<tr> 
-    	    		<td></td> 
-    	    		<td></td>
-				 	<td width="25%" align="right">Avance de Efectivo: </td>
-				 	<td width="25%" align="right">'.number_format($cashadvance, 2).'</td> 
-    	    	</tr>
-    	    	<tr> 
-    	    		<td></td> 
-    	    		<td></td>
-				 	<td width="25%" align="right"><b>Total Deduciones:</b></td>
-				 	<td width="25%" align="right"><b>'.number_format($total_deduction, 2).'</b></td> 
-    	    	</tr>
-    	    	<tr> 
-    	    		<td></td> 
-    	    		<td></td>
-				 	<td width="25%" align="right"><b>Salario Neto:</b></td>
-				 	<td width="25%" align="right"><b>'.number_format($net, 2).'</b></td> 
-    	    	</tr>
+    	    	
+    	    	    	    	
+    	    	
     	    </table>
     	    <br><hr>
 		';
